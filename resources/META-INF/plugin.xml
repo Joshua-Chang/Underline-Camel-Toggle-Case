@@ -1,0 +1,49 @@
+<idea-plugin>
+  <id>com.your.company.unique.plugin.id</id>
+  <name>Underline Camel Toggle Case</name>
+  <version>1.0</version>
+  <vendor email="joshuachang0823@gmail.com" url="http://www.miemie.tk">YourCompany</vendor>
+
+  <description><![CDATA[
+  <h1>Underline Camel Toggle Case</h1>
+      HotKey: Ctrl+Shift+C / Cmd+Shift+C<br>
+      <em>Coordinate with 'Toggle case' (Ctrl+Shift+U) could be helpful when you declare a final field or constant</em>
+      <p><b>e.g:</b>
+      <ul>
+        <li>HotKey: Ctrl+Shift+C / Cmd+Shift+C</li>
+        <li>light_dialog_type --> lightDialogType</li>
+        <li>anApplePie --> an_apple_pie</li>
+        <li>homeActivityTimer -->home_activity_timer --> HOME_ACTIVITY_TIMER</li>
+      </ul>
+      </p>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      version:1.0<br>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="tk.miemie.ToggleCaseAction" class="tk.miemie.ToggleCaseAction" text="Underline Camel Changer" description="Toggle">
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="control shift C"/>
+      <keyboard-shortcut keymap="Mac OS X" first-keystroke="shift meta C" replace-all="true"/>
+      <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="shift meta C" replace-all="true"/>
+    </action>
+  </actions>
+
+</idea-plugin>
