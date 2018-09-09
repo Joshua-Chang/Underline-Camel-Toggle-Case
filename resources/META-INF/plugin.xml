@@ -6,11 +6,10 @@
 
   <description><![CDATA[
   <h1>Underline Camel Toggle Case</h1>
-      HotKey: Ctrl+Shift+C / Cmd+Shift+C<br>
+      HotKey: Ctrl+Shift+C / mouse right click ->Underline Camel Changer<br>
       <em>Coordinate with 'Toggle case' (Ctrl+Shift+U) could be helpful when you declare a final field or constant</em>
       <p><b>e.g:</b>
       <ul>
-        <li>HotKey: Ctrl+Shift+C / Cmd+Shift+C</li>
         <li>light_dialog_type --> lightDialogType</li>
         <li>anApplePie --> an_apple_pie</li>
         <li>homeActivityTimer -->home_activity_timer --> HOME_ACTIVITY_TIMER</li>
@@ -41,8 +40,8 @@
     <action id="tk.miemie.ToggleCaseAction" class="tk.miemie.ToggleCaseAction" text="Underline Camel Changer" description="Toggle">
       <add-to-group group-id="EditorPopupMenu" anchor="first"/>
       <keyboard-shortcut keymap="$default" first-keystroke="control shift C"/>
-      <keyboard-shortcut keymap="Mac OS X" first-keystroke="shift meta C" replace-all="true"/>
-      <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="shift meta C" replace-all="true"/>
+      <keyboard-shortcut keymap="Mac OS X" first-keystroke="control shift C" replace-all="true"/>
+      <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="control shift C" replace-all="true"/>
     </action>
   </actions>
 
